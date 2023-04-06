@@ -1,0 +1,24 @@
+import Patient from "./Patient"
+
+function PatientsList() {
+  return (
+    <div className="lg:w-3/5 md:w-1/2  sm:w-full ">
+    <h2 className=" font-black text-xl mx-auto text-center w-1/2 md:text-2xl  lg:text-3xl">
+      Lista Pacientes
+    </h2>
+    <p className="font-bold mt-5 text-center mb-10 ">
+      Administrar tus {" "}
+      <span className="text-indigo-600 font-bold text-lg ">Pacientes y Citas</span>
+
+    </p>
+    <div className="md:h-screen md:overflow-y-scroll ">
+      <Patient/>
+      <Patient/>
+      <Patient/>
+      <Patient/>
+      </div>
+    </div>
+  )
+}
+
+export default PatientsList
